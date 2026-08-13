@@ -1,4 +1,4 @@
-# 5-Minute Interview Demo Script
+# 5-Minute Demo Script
 
 ## 1. Introduce
 

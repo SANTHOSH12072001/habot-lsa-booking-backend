@@ -8,7 +8,7 @@
 
 This repository implements the hiring-project requirements for an LSA Service Booking module using **Python + Django REST Framework**.
 
-The assessment asks for a normalized relational design, optimized LSA search, a booking API with double-booking protection, a payment webhook, third-party mock integration, automated tests, CI, and technical documentation.
+This project implements a normalized relational design, optimized LSA search, a booking API with double-booking protection, a payment webhook, third-party mock integration, automated tests, CI, and technical documentation.
 
 The implementation includes the four domain entities described in the project outcome:
 
@@ -339,37 +339,4 @@ git push origin feature/booking-api
 
 Open a pull request into `develop` and merge into `main` only after CI passes.
 
-## 15. Submission checklist
 
-- [ ] Replace candidate contact placeholders.
-- [ ] Create a public GitHub/GitLab repository.
-- [ ] Push this codebase.
-- [ ] Add repository URL to the presentation.
-- [ ] Run `pytest` locally and keep the passing output ready.
-- [ ] Run the API and demonstrate booking creation.
-- [ ] Demonstrate an overlapping request returning `409`.
-- [ ] Demonstrate LSA skill search.
-- [ ] Demonstrate payment webhook changing booking status.
-- [ ] Present the included PowerPoint (maximum 15 slides).
-- [ ] Keep code, presentation, and documents labelled with full name and contact information.
-
-## 16. Important assessment talking points
-
-During the interview, be prepared to explain:
-
-1. Why Django REST Framework was selected.
-2. Why MVT terminology is used in Django.
-3. How the overlap condition works.
-4. Why a transaction is used during booking creation.
-5. How the LSA search avoids N+1 queries.
-6. Why the webhook validates payment amount.
-7. Why external requests have a timeout.
-8. How tests isolate the third-party dependency.
-9. Why PostgreSQL is recommended for stronger concurrency guarantees.
-10. What would be changed before production.
-
-## 17. Assignment source alignment
-
-The provided hiring form asks for a production-ready prototype with Parent, LSA, Booking and Payment entities, optimized available-LSA querying, a booking API, payment webhook state transitions, automated tests, and README documentation. It also specifies POST `/api/v1/bookings/` and GET `/api/v1/lsas/search/`, third-party integration with `requests`, and GitHub Actions CI.
-
-Submission deadline stated in the provided form: **13 August 2026**.
